@@ -17,7 +17,7 @@ app.use(express.json());
 //Middleware CORS setting
 //solo esta línea habilita toda la api a todo el público, sin restricción
 // app.use(cors());
-//Configurando puertos(o dominios) permitidos para hacer consultas a la api
+//Configurando puertos(o dominios) de front permitidos para hacer consultas a la api
 const whitelist = ['http://localhost:5500', 'https://myapp.com'];
 const options = {
   origin: (origin, callback) => {
